@@ -6,6 +6,9 @@
     --violeta:#af6ae7;
     --rojo:#E74646;
 }
+a{
+    color: unset;
+}
 .verde{
     color: var(--verde);
 }
@@ -55,6 +58,9 @@
 .union{
     display: inline-block;
     transform: rotate(180deg);
+}
+.bullet-violeta li::marker{
+    color: var(--violeta);
 }
 body{
     background-color: var(--blanco);
