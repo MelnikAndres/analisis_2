@@ -87,7 +87,7 @@ main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
