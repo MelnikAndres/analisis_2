@@ -32,6 +32,12 @@ a{
 .text-block{
     display: inline-block;
 }
+p{
+    max-width: calc(100vw - 2em);
+}
+ol{
+    max-width: calc(100vw - 2em - 40px);
+}
 .vectorize::after{
     content: "";
     position: absolute;
@@ -125,4 +131,15 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.formula img{
+    max-width: calc(100vw - 2em);
+}
+
+@media (max-width:470px) {
+    body{
+        font-size: 0.8rem;
+
+    }
+    
 }
