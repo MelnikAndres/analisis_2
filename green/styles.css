@@ -7,6 +7,7 @@
     --violeta:#af6ae7;
     --rojo:#E74646;
     z-index: 100;
+    position: relative;
 }
 a{
     color: unset;
@@ -91,6 +92,9 @@ main{
     overflow-y: scroll;
     overflow-x: hidden;
 }
+main::-webkit-scrollbar-track{
+    width: 1em;
+}
 
 .block{
     height: 100vh;
@@ -122,19 +126,33 @@ header{
     border: calc(40vw - 1em) solid var(--blanco);
     border-top: 100vh solid transparent;
 }
+.detalle-planteo{
+    height: 100vh;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: var(--verde-oscuro);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    transform: translate(-50%,-50%);
+}
 section{
     & h2{
         margin-top: 1em;
     }
 }
 .formula{
-    margin: 1em 0;
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: fit-content;
     display: flex;
     justify-content: center;
+    background-color: var(--verde-oscuro);
 }
 .formula img{
     max-width: calc(100vw - 2em);
+    mix-blend-mode:darken
 }
 
 @media (max-width:470px) {
