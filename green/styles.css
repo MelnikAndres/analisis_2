@@ -89,6 +89,7 @@ main{
     place-items: center;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .block{
@@ -139,7 +140,16 @@ section{
 @media (max-width:470px) {
     body{
         font-size: 0.8rem;
-
     }
-    
+    .detalle-titulo{
+        height: 0;
+        width: 0;
+        background-color: var(--verde-oscuro);
+        position: absolute;
+        top: 1em;
+        left: 0;
+        z-index: 50;
+        border: calc(50vh - 1em) solid var(--blanco);
+        border-left: calc(100vw - 1em) solid transparent;
+    }
 }
