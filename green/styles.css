@@ -33,6 +33,9 @@ a{
 .text-block{
     display: inline-block;
 }
+.bg-verde-oscuro{
+    background-color: var(--verde-oscuro);
+}
 p{
     max-width: calc(100vw - 2em);
 }
@@ -143,12 +146,12 @@ section{
     }
 }
 .formula{
+    margin: 1em 0;
     left: 50%;
     transform: translate(-50%,0);
     width: fit-content;
     display: flex;
     justify-content: center;
-    background-color: var(--verde-oscuro);
 }
 .formula img{
     max-width: calc(100vw - 2em);
