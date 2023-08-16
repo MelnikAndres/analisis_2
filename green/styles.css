@@ -71,12 +71,12 @@ body{
     line-height: 1.5;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-    padding: 0 1em;
     z-index: 0;
     height: 100vh;
 }
 
 main{
+    margin-left: 1em;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -113,7 +113,7 @@ header{
     left: 10vw;
     z-index: 50;
     border: calc(40vw - 1em) solid var(--blanco);
-    border-top: calc(50vw - 1em) solid transparent;
+    border-top: 100vh solid transparent;
 }
 section{
     & h2{
